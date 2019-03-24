@@ -14,7 +14,7 @@
 <synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns="http://www.xebialabs.com/deployit/synthetic"
            xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
-  <type type="nealCustom.TaskFailures" extends="xlrelease.PythonScript" virtual="true">
+  <type type="nealCustom.TaskFailures" extends="xlrelease.PythonScript">
     <property name="iconLocation" default="nealCustom/neal.png" hidden="true"/>
     <property name="taskColor" hidden="true" default="#F47664" />
     <property name="failureRate" default="0.5" category="input" required="false"/>
