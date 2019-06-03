@@ -7,7 +7,7 @@
 [![Github All Releases][xlr-chaos-monkey-plugin-downloads-image]][xlr-chaos-monkey-plugin-releases-url]
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-blue.svg)](https://github.com/RichardLitt/standard-readme)
 
-> Randomly fail XLR tasks to encourage continuous improvement and resilient systems [http://principlesofchaos.org/](http://principlesofchaos.org/)
+> Randomly fail XLR tasks to encourage continuous improvement and resilient systems [https://principlesofchaos.org/](https://principlesofchaos.org/)
 
 ## Installation
 
@@ -38,7 +38,7 @@ Tasks included in this plugin:
 1. Fail Task In Release
 
 ### Unstable Task
-This task will fail a user-defined percentage of the time
+This task will fail a user-defined percentage of the time.
 
 ### Fail Task In Phase
 Within the same phase as the Chaos Monkey task, set a random pending or planned task to fail.  If there are no pending or planned tasks remaining in the phase, then the Chaos Monkey task itself will fail.
@@ -52,7 +52,7 @@ Please review the contributing guidelines for _xebialabs-community_ at [http://x
 
 ## License
 
-This community plugin is licensed under the [MIT license][xlr-chaos-monkey-plugin-license-url].
+This community plugin is licensed under the [MIT license][xlr-chaos-monkey-plugin-license-url]
 
 See license in [LICENSE.md](LICENSE.md)
 
