@@ -14,9 +14,13 @@
 <synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns="http://www.xebialabs.com/deployit/synthetic"
            xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
-  <type type="chaosMonkey.TaskFailures" extends="xlrelease.PythonScript">
+  <type type="chaosMonkey.Task" extends="xlrelease.PythonScript" virtual="true">
     <property name="iconLocation" default="chaosMonkey/monkey.png" hidden="true"/>
     <property name="taskColor" hidden="true" default="#F47664" />
+  </type>
+  <type type="chaosMonkey.UnstableTask" extends="chaosMonkey.Task">
     <property name="failureRate" default="0.5" category="input" required="true"/>
   </type>
+  <type type="chaosMonkey.FailTaskInPhase" extends="chaosMonkey.Task" />
+  <type type="chaosMonkey.FailTaskInRelease" extends="chaosMonkey.Task" />
 </synthetic>
