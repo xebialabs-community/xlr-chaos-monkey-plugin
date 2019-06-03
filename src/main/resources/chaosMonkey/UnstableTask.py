@@ -9,6 +9,6 @@ randInt = random.randint(0, 1000)
 
 if float(randInt) < float(failureRate)*1000:
     logger.error('Chaos monkey strikes - task failure')
-    sys.exit(1)
+    sys.exit("Chaos monkey strikes - failed task")
 else:
     sys.exit(0)
