@@ -14,7 +14,5 @@ if len(pendingTasks) > 0:
     taskApi.updateTask(pendingTasks[randomTaskInd])
     logger.warn('Chaos monkey strikes - failed task %s' % pendingTasks[randomTaskInd].id)
 else:
-    logger.warn('No pending tasks in phase - failing Chaos Monkey task')
-    getCurrentTask.precondition = "foo = bar"
-    taskApi.updateTask(getCurrentTask())
-    taskApi.retryTask(getCurrentTask().id, "Task failed by Chaos Monkey")
+    logger.warn('No pending or planned tasks in release - failing Chaos Monkey task')
+    sys.exit("Task failed by Chaos Monkey")
