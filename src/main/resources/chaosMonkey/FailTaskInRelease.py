@@ -16,5 +16,5 @@ if len(pendingTasks) > 0:
 else:
     logger.warn('No pending tasks in phase - failing Chaos Monkey task')
     getCurrentTask.precondition = "foo = bar"
-    taskApi.updateTask(getCurrentTask)
+    taskApi.updateTask(getCurrentTask())
     taskApi.retryTask(getCurrentTask().id, "Task failed by Chaos Monkey")
