@@ -37,6 +37,8 @@ Tasks included in this plugin:
 1. Fail Task In Phase
 1. Fail Task In Release
 
+![Task Scopes](images/task-impacts.jpg)
+
 ### Unstable Task
 This task will fail a user-defined percentage of the time.
 
